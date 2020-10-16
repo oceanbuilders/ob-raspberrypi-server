@@ -1,6 +1,7 @@
 const db = require('../config/db.config.js');
 const { Op } = require('sequelize');
-const Event = db.table;
+const Event = db.events;
+const Topic = db.topics;
  
 exports.findAll = (req, res) => {
   Event.findAll()
@@ -35,3 +36,11 @@ exports.findByDate = (req, res) => {
     return res.status(200).json(Event)
   }).catch(error => res.status(400).send(error));
 };
+
+exports.getAllTopics = (req, res) => {
+    Topic.findAll()
+    .then(Events => {
+      res.json(Events);
+    })
+    .catch(error => res.status(400).send(error))
+}

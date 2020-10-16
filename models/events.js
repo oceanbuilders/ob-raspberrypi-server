@@ -1,5 +1,5 @@
 module.exports = (sequelize, Sequelize) => {
-  const table = sequelize.define(`${process.env.DB_TABLE}`, {
+  const events = sequelize.define(`DataSensorTest`, {
     EventID: {
       type: Sequelize.INTEGER,
       primaryKey: true
@@ -15,5 +15,5 @@ module.exports = (sequelize, Sequelize) => {
     timestamps: false,
   });
 
-  return table;
+  return events;
 }

@@ -18,6 +18,7 @@ db.Sequelize = Sequelize;
 db.sequelize = sequelize;
  
 //Models/tables
-db.table = require(`../models/table`)(sequelize, Sequelize);
+db.events = require(`../models/events`)(sequelize, Sequelize);
+db.topics = require(`../models/topics`)(sequelize, Sequelize);
  
 module.exports = db;
