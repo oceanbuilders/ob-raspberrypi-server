@@ -7,6 +7,5 @@ const auth = require('../middleware/auth');
 router.get('/', auth, events.findAll);
 router.get('/:eventId', auth, events.findById);
 router.get('/:startDate/to/:endDate', auth, events.findByDate);
-router.get('/topics', auth, events.getAllTopics)
 
 module.exports = router;
