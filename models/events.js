@@ -4,7 +4,10 @@ module.exports = (sequelize, Sequelize) => {
       type: Sequelize.INTEGER,
       primaryKey: true
     },
-    Temperature: {
+    topic: {
+      type: Sequelize.STRING
+    },
+    value: {
       type: Sequelize.INTEGER
     },
     TimeStamp: {

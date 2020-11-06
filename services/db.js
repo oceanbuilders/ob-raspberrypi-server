@@ -37,6 +37,35 @@ exports.findByDate = (req, res) => {
   }).catch(error => res.status(400).send(error));
 };
 
+exports.getTopicData = (req, res) => {  
+    Event.findAll({
+      where: {
+        topic: req.params.topic
+      }
+    }).then(Event => {
+      if (!Event){
+        return res.status(404).json({message: "Topic Has No Data"})
+      }
+      return res.status(200).json(Event)
+    }).catch(error => res.status(400).send(error));
+};
+
+exports.getTopicDatawithDates = (req, res) => {  
+    Event.findAll({
+      where: {
+        topic: req.params.topic,
+        TimeStamp: {
+            [Op.between]: [req.params.startDate, req.params.endDate],
+        }
+      }
+    }).then(Event => {
+      if (!Event){
+        return res.status(404).json({message: "Topic with Specific Dates Has No Data"})
+      }
+      return res.status(200).json(Event)
+    }).catch(error => res.status(400).send(error));
+};
+
 exports.getAllTopics = (req, res) => {
     Topic.findAll()
     .then(Events => {
