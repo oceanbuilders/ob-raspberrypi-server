@@ -4,9 +4,9 @@ const express = require('express');
 const app = express();
 const winston = require('winston');
 
-const privateKey = fs.readFileSync('/etc/letsencrypt/live/opensteading.ddns.net/privkey.pem', 'utf8');
-const certificate = fs.readFileSync('/etc/letsencrypt/live/opensteading.ddns.net/cert.pem', 'utf8');
-const ca = fs.readFileSync('/etc/letsencrypt/live/opensteading.ddns.net/chain.pem', 'utf8');
+const privateKey = fs.readFileSync(process.env.SSH_PRIVATE_KEY, 'utf8');
+const certificate = fs.readFileSync(process.env.SSH_CERTIFICATE, 'utf8');
+const ca = fs.readFileSync(process.env.SSH_CA, 'utf8');
 
 const bodyParser = require('body-parser');
 app.use(bodyParser.json())
