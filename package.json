@@ -16,6 +16,10 @@
     "mysql2": "^1.5.3",
     "sequelize": "^4.37.6",
     "update": "^0.7.4",
-    "winston": "^3.3.3"
+    "winston": "^3.3.3",
+    "mqtt": "^1.6.3"
+  },
+  "devDependencies": {
+    "standard": "^16.0.1"
   }
 }
