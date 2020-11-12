@@ -73,3 +73,11 @@ exports.getAllTopics = (req, res) => {
     })
     .catch(error => res.status(400).send(error))
 }
+
+exports.getAllTopicsHasValue = (req, res) => {
+    sequelize.query("SELECT DISTINCT `topic` FROM `DataSensorTest`", { type: QueryTypes.SELECT })
+    .then(Topics => {
+        res.json(Topics);
+    })
+    .catch(error => res.status(400).send(error))    
+}
