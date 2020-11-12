@@ -75,7 +75,7 @@ exports.getAllTopics = (req, res) => {
 }
 
 exports.getAllTopicsHasValue = (req, res) => {
-    sequelize.query("SELECT DISTINCT `topic` FROM `DataSensorTest`", { type: QueryTypes.SELECT })
+    Topic.query("SELECT DISTINCT `topic` FROM `DataSensorTest`", { type: QueryTypes.SELECT })
     .then(Topics => {
         res.json(Topics);
     })
