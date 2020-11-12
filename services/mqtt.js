@@ -28,19 +28,20 @@ class MqttHandler {
             console.log(`mqtt client connected`);
         });
 
-        this.mqttClient.subscribe('test/message/status', { qos: 0 });
+        // this.mqttClient.subscribe('test/message/status', { qos: 0 });
 
-        this.mqttClient.on('message', function (topic, message) {
-            // console.log(message.toString());
-        });
+        // this.mqttClient.on('message', function (topic, message) {
+        //     console.log(message.toString());
+        // });
 
         this.mqttClient.on('close', () => {
             console.log(`mqtt client disconnected`);
         });
     }
 
-    sendMessage(message) {
-        this.mqttClient.publish('test/message', message);
+    sendMessage(topic, message) {
+        this.mqttClient.publish(topic, message);
+        this.mqttClient.subscribe(topic+'/status', {qos: 0});
         this.mqttClient.on('message', function (topic, message) {
             ack = message.toString();            
         });
