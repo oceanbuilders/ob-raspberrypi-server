@@ -1,1 +1,52 @@
-<mxfile host="app.diagrams.net" modified="2021-03-22T01:20:24.692Z" agent="5.0 (Windows)" version="14.4.9" etag="7jWwwWvfXr3_OQw_d4D9" type="github"><diagram id="zrAA1NotphLgcOZvO6A9">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-03-22T01:45:44.932Z" agent="5.0 (Windows)" etag="OzIo1m5PRhmoUzrdCiWm" version="14.4.9" type="github">
+  <diagram id="zrAA1NotphLgcOZvO6A9" name="Page-1">
+    <mxGraphModel dx="526" dy="608" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4NgJnP7UHUI7AdM1gYdw-1" value="&lt;div&gt;Python &lt;br&gt;&lt;/div&gt;&lt;div&gt;Server&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="100" y="250" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4NgJnP7UHUI7AdM1gYdw-2" value="&lt;div&gt;NodeJS&lt;/div&gt;&lt;div&gt;Auth Server&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="260" y="160" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4NgJnP7UHUI7AdM1gYdw-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4NgJnP7UHUI7AdM1gYdw-3" target="4NgJnP7UHUI7AdM1gYdw-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4NgJnP7UHUI7AdM1gYdw-11" value="&lt;div&gt;HTTP&lt;/div&gt;&lt;div&gt;API Requests&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="4NgJnP7UHUI7AdM1gYdw-10">
+          <mxGeometry x="-0.32" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4NgJnP7UHUI7AdM1gYdw-3" value="Pi Server&lt;br&gt;&lt;div&gt;(Everything&lt;/div&gt;&lt;div&gt;Else)&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="260" y="320" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4NgJnP7UHUI7AdM1gYdw-5" value="Browser" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="230" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4NgJnP7UHUI7AdM1gYdw-6" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="4NgJnP7UHUI7AdM1gYdw-2" target="4NgJnP7UHUI7AdM1gYdw-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="340" as="sourcePoint" />
+            <mxPoint x="370" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4NgJnP7UHUI7AdM1gYdw-7" value="&lt;div&gt;Login/Get&lt;/div&gt;&lt;div&gt;Token&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="4NgJnP7UHUI7AdM1gYdw-6">
+          <mxGeometry x="-0.2671" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4NgJnP7UHUI7AdM1gYdw-8" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="4NgJnP7UHUI7AdM1gYdw-3" target="4NgJnP7UHUI7AdM1gYdw-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="340" as="sourcePoint" />
+            <mxPoint x="370" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4NgJnP7UHUI7AdM1gYdw-9" value="&lt;div&gt;Use Token&lt;/div&gt;&lt;div&gt;For API Access&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="4NgJnP7UHUI7AdM1gYdw-8">
+          <mxGeometry x="0.2812" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
